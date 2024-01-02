@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt]{article} 
+\usepackage{amsmath}
+\usepackage{ctex}
+\usepackage{xcolor}
+
+
+\begin{document}
+
+\title {finite dimensional space}
+% 生成标题
+\maketitle
+
+% 设置页码格式是罗马数字
+\pagenumbering{roman}
+% 生成目录
+\tableofcontents
+% 插入新页
+\newpage
+% 设置页码格式是阿拉伯数字
+\pagenumbering{arabic}
+
+\section{\textbf{span and linear independence}}
+    \subsection{\textcolor{orange}{Notation} \textbf{list of vectors}}
+    we will usually wirite lists of vectors without surrounding parentheses.
+
+    \subsection{\textcolor{orange}{definition} \textbf{linear combination}}
+    a \textbf{linear combination} of list $v_1,...,v_m$ of vectors in V is a vector of the form
+    \begin{align*}
+        a_1v_1 + ... + a_mv_m,
+    \end{align*}
+    where $a_1,...,a_m \in F$
+
+    \subsection{\textcolor{orange}{definition} \textbf{span}}
+    the set of all linear combination of a list of vectors $v_1,...,v_m$ in V is  called the span of 
+    $v_1,...,v_m$, denoted span$(v_1,...,v_m)$. in other words,
+    \begin{align*}
+        span(v_1,...,v_m) = \{a_1v_1 + a_2v_2 + ... + a_mv_m : a_1,...,a_m \in F\}.
+    \end{align*}
+    the span of the empty list () is defined to be \{ 0\}
+
+    \subsection{\textcolor{blue}{span is the smallest containing subspace}}
+    the span of a list of vectors in V is the smallest subspace in of V containing all
+    the vectors in the list.
+\end{document}
