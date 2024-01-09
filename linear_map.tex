@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt]{article} 
+\usepackage{amsmath}
+\usepackage{ctex}
+\usepackage{xcolor}
+
+
+\begin{document}
+
+\title {Linear Maps}
+% 生成标题
+\maketitle
+
+% 设置页码格式是罗马数字
+\pagenumbering{roman}
+% 生成目录
+\tableofcontents
+% 插入新页
+\newpage
+% 设置页码格式是阿拉伯数字
+\pagenumbering{arabic}
+
+\section{\textbf{The Vector Space of Linear Maps}}
+    \subsection{\textcolor{orange}{Definition} \textbf{linear map}}
+    A \textbf{linear map} form V to W is a function T:$V \Rightarrow W $ with the following peiperties:
+    \begin{itemize}
+        \item \textbf{additivity}: $T(u+v)  = Tu = Tv$ for all u,v $\in V$;
+        \item \textbf{homogeneity}: $T(\lambda v) = \lambda(Tv)$ for all $\lambda \in F$ and all $v \in V$;
+    \end{itemize}
+    \subsection{\textcolor{orange}{Example} lihnear maps}
+    from $R^3$ to $R^2$ \\
+    define T $\in L(R^3,R^2)$ by
+    \begin{align*}
+        T(x, y, z) = (2x - y + 3z, 7x + 5y - 6z)
+    \end{align*}
+    from $F^n$ to $F^m$\\
+    generalizing the previous example, let $m$ and $n$ be positive intgers, let
+    $A_{i,k} \in F$ for $j = 1,...,m$ and $k = 1,...,n$ and define T $\in l(F^n,F^m)$ by
+    $T(x_1,...,x_n) = (A_{1,1}x_1 + ... + A_{1,n}x_n,...,A_{m,1}x_1 + ... + A_{m,n}x_n)$ 
+    actually every linear map from $F^n to F^m$ is of this form.
+    \subsection{\textcolor{blue}{linear maps and basis of domain}}
+    Suppose $v_1,...,v_m$ is a basis of the V and $w_1,...,w_n \in W$. then there exists a unqiue
+    linear map $T : V \rightarrow W$ sunch that
+    \begin{align*}
+        Tv_j = w_j
+    \end{align*}
+    for each j = 1,...,n.
+\end{document}
