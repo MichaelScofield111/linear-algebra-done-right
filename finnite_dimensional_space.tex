@@ -78,4 +78,36 @@
     \subsection{\textcolor{blue}{length of linearly independent list $\le$ length of spanning list}}
     In a finite-dimensional vector space, the length of every linearly independent list of vectors is less than
     or equal to length of every spanning list of vectors.
+    \newpage
+    \title {Bases}
+    \subsection{\textbf{basis}}
+    a \textbf{basis} of V is list of vectors in V that is linearly independent and spans V.
+    \subsection{criterion for basis}
+    A list of $v_1,...,v_n$ of vectors in V is a basis of V if and only if every $v \in V$ can be written uniquely in the form
+    \begin{align*}
+        v = a_1v_1 + ... + a_nv_n
+    \end{align*}
+    where $a_1,...,a_n \in F$
+    \subsection{spanning list contains a basis}
+    Every spanning list in a vector space can be reduced to a basis of the vector space.
+    \subsection{linearly independent list extends to a basis}
+    Every linearly independent list of vectors in a finnite-dimensional vector space can be extended to a basis of vector space.
+    \subsection{every subspace of V is part of a direct sum equal to V}
+    suppose V is finite-dimensional and U is subspace of V. then there is a subspace W of V sunch that V = U $\oplus$ w
+    \subsection{Basis length does not depend on basis}
+    any two bases of a finite-dimensional vector space have the same length.
+    \subsection{\textcolor{orange}{Definition} \textbf{dimension}, dim$V$}
+    \begin{itemize}
+        \item The dimension of a finite-dimensional vector space is the length of any basis of the vector space
+        \item the dimension of V (if  V is finite-dimensional) is denoted by dim$V$
+    \end{itemize}
+    \subsection{\textcolor{blue}{Linear independent list of the right length is a basis}}
+    Suppose V is finite-dimensional. then every linearly independent list of vectors in V with length dim$V$ is a basis of V.
+    \subsection{\textcolor{blue}{Spanning list of the right length is a basis}}
+    Suppose V is finnite-dimensional. then every spanning list of vectors in V with length dim$V$ is basis of V.
+    \subsection{\textcolor{blue}{Demension of a sum}}
+    if $U_1$ and $U_2$ are subspace of a finite-dimensional vector space, then
+    \begin{align*}
+        dim(U_1 + U_2) = dimU_1 + dimU_2 - dim(U_1 \cap U_2).
+    \end{align*}
 \end{document}
